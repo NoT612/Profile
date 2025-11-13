@@ -27,6 +27,27 @@
         overflow: hidden;
       }
 
+      /* --- Navbar --- */
+      .navbar {
+        background: #4e5be3;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px 0;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+        color: #ffe082;
+      }
+
       .header {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         color: white;
@@ -137,10 +158,42 @@
         height: 400px;
         border: none;
       }
+
+      /* ปุ่มไปหน้าอื่น */
+      .footer-buttons {
+        text-align: center;
+        padding: 20px;
+        background: #f8f9ff;
+        border-top: 2px solid #e0e0e0;
+      }
+
+      .footer-buttons a {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 10px 25px;
+        margin: 10px;
+        border-radius: 25px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .footer-buttons a:hover {
+        background: linear-gradient(135deg, #5a6fff 0%, #885ad8 100%);
+        transform: translateY(-3px);
+      }
     </style>
   </head>
   <body>
     <div class="container">
+      <!-- Navbar -->
+      <div class="navbar">
+        <a href="index.html">หน้าแรก</a>
+        <a href="form.html">เกี่ยวกับฉัน</a>
+        <a href="#">ติดต่อเรา</a>
+      </div>
+
+      <!-- Header -->
       <div class="header">
         <img src="./img1.jpeg" alt="รูปโปรไฟล์" class="profile-img" />
         <h1>สมชาย ใจดี</h1>
@@ -149,25 +202,22 @@
         </p>
       </div>
 
+      <!-- Content -->
       <div class="content">
         <div class="section">
           <h2>ข้อมูลส่วนตัว</h2>
           <div class="info-grid">
             <div class="info-item">
-              <strong>ชื่อ-นามสกุล:</strong>
-              สมชาย ใจดี
+              <strong>ชื่อ-นามสกุล:</strong> สมชาย ใจดี
             </div>
             <div class="info-item">
-              <strong>ชื่อเล่น:</strong>
-              ชาย
+              <strong>ชื่อเล่น:</strong> ชาย
             </div>
             <div class="info-item">
-              <strong>รหัสนักศึกษา:</strong>
-              6543210123
+              <strong>รหัสนักศึกษา:</strong> 6543210123
             </div>
             <div class="info-item">
-              <strong>สาขา:</strong>
-              วิทยาการคอมพิวเตอร์
+              <strong>สาขา:</strong> วิทยาการคอมพิวเตอร์
             </div>
           </div>
         </div>
@@ -233,6 +283,13 @@
             ></iframe>
           </div>
         </div>
+      </div>
+
+      <!-- Footer Buttons -->
+      <div class="footer-buttons">
+        <a href="index.html">หน้าแรก</a>
+        <a href="about.html">เกี่ยวกับฉัน</a>
+        <a href="contact.html">ติดต่อเรา</a>
       </div>
     </div>
   </body>
